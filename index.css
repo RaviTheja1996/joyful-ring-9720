@@ -305,6 +305,10 @@ body {
         justify-content: space-between;
 }
 
+#footer i {
+        color: black;
+}
+
 #footer>hr {
         font-weight: bold;
         height: 5px;
