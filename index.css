@@ -300,6 +300,11 @@ body {
         padding-left: 10%;
 }
 
+.footer-icon-flex {
+        display: flex;
+        justify-content: space-between;
+}
+
 #footer>hr {
         font-weight: bold;
         height: 5px;
