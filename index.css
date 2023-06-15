@@ -113,6 +113,7 @@ body {
         background-color: #ffc96e;
         border: 2px solid black;
         text-align: center;
+        padding: 0.5vh;
 }
 
 .box2 {
@@ -121,6 +122,7 @@ body {
         background-color: #ff405b;
         border: 2px solid black;
         text-align: center;
+        padding: 0.5vh;
 }
 
 .box3 {
@@ -129,6 +131,7 @@ body {
         background-color: #7059f9;
         border: 2px solid black;
         text-align: center;
+        padding: 0.5vh;
 }
 
 .flex {
@@ -261,6 +264,7 @@ body {
         padding-right: 4%;
         padding-top: 6%;
         padding-bottom: 6%;
+        margin-top: 10vh;
 }
 
 #FAQ p {
