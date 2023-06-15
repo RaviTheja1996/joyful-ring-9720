@@ -233,6 +233,26 @@ iframe {
         justify-content: space-between;
 }
 
+#footer i[class*="fa-youtube"]:hover {
+        color: red;
+}
+
+#footer i[class*="fa-facebook"]:hover {
+        color: blue;
+}
+
+#footer i[class*="fa-square-instagram"]:hover {
+        color: orange;
+}
+
+#footer i[class*="fa-linkedin"]:hover {
+        color: blue;
+}
+
+#footer i[class*="fa-twitter"]:hover {
+        color: blue;
+}
+
 #footer i {
         color: black;
 }
