@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+                crossorigin="anonymous">
+
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+        <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+                crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./services.css">
+        <script src="./services.js" type="module"></script>
+        <script src="https://kit.fontawesome.com/a4ecbc7412.js" crossorigin="anonymous"></script>
+        <script src="/docs/5.3/assets/js/color-modes.js"></script>
+        <title>Services</title>
+</head>
+
+<body>
+        <div class="scroll-tracker"></div>
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                        <a class="navbar-brand nav-flex" href="#">
+                                <img src="./images/logo.PNG" alt="" style="height: 60px; width: 130px;">
+                                <p>Digital Client Hub</p>
+                        </a>
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ms-auto">
+                                        <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page"
+                                                        href="./index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link active" href="#">Projects</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link active" href="./services.html">Services</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link active" href="./cart.html">Cart</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link active" href="./About.html" tabindex="-1"
+                                                        aria-disabled="true">About</a>
+                                        </li>
+                                </ul>
+                        </div>
+                        <hr>
+                </div>
+        </nav>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="check" viewBox="0 0 16 16">
+                        <title>Check</title>
+                        <path
+                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z">
+                        </path>
+                </symbol>
+        </svg>
+
+        <div class="container py-3">
+                <header>
+                        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                                <h1 class="display-4 fw-normal text-body-emphasis indigo">Choose the Best Pricing Plan
+                                        for your Business</h1>
+                        </div>
+                </header>
+
+                <main>
+                        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                                <div class="col">
+                                        <div class="card mb-4 rounded-3 shadow-sm lightPink">
+                                                <div class="card-header py-3 green">
+                                                        <h4 class="my-0 fw-normal white">Basic</h4>
+                                                </div>
+                                                <div class="card-body">
+                                                        <h1 class="card-title pricing-card-title">₹<small
+                                                                        id="BasicPrice">30000</small><small
+                                                                        class="text-body-secondary fw-light">/mo</small>
+                                                        </h1>
+                                                        <ul class="list-unstyled mt-3 mb-4">
+                                                                <li>10 users included</li>
+                                                                <li>2 GB of storage</li>
+                                                                <li>Email support</li>
+                                                                <li>Help center access</li>
+                                                        </ul>
+                                                        <button type="button" class="w-100 btn btn-lg btn-primary"
+                                                                id="BasicCartButton">
+                                                                Add To Cart
+                                                        </button>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col">
+                                        <div class="card mb-4 rounded-3 shadow-sm lightPink">
+                                                <div class="card-header py-3 orange">
+                                                        <h4 class="my-0 fw-normal">Pro</h4>
+                                                </div>
+                                                <div class="card-body">
+                                                        <h1 class="card-title pricing-card-title">
+                                                                ₹<small id="Proprice">70000</small><small
+                                                                        class="text-body-secondary fw-light">/mo</small>
+                                                        </h1>
+                                                        <ul class="list-unstyled mt-3 mb-4">
+                                                                <li>20 users included</li>
+                                                                <li>10 GB of storage</li>
+                                                                <li>Priority email support</li>
+                                                                <li>Help center access</li>
+                                                        </ul>
+                                                        <button type="button" class="w-100 btn btn-lg btn-primary"
+                                                                id="ProCartButton">
+                                                                Add To Cart
+                                                        </button>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col">
+                                        <div class="card mb-4 rounded-3 shadow-sm lightPink">
+                                                <div class="card-header py-3 red">
+                                                        <h4 class="my-0 fw-normal">Enterprise</h4>
+                                                </div>
+                                                <div class="card-body">
+                                                        <h1 class="card-title pricing-card-title">
+                                                                ₹<small id="EnterprisePrice">100000</small><small
+                                                                        class="text-body-secondary fw-light">/mo</small>
+                                                        </h1>
+                                                        <ul class="list-unstyled mt-3 mb-4">
+                                                                <li>30 users included</li>
+                                                                <li>15 GB of storage</li>
+                                                                <li>Phone and email support</li>
+                                                                <li>Help center access</li>
+                                                        </ul>
+                                                        <button type="button" class="w-100 btn btn-lg btn-primary"
+                                                                id="EnterpriseCartButton">
+                                                                Add To Cart
+                                                        </button>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <h2 class="display-6 text-center mb-4">Compare plans</h2>
+
+                        <div class="table-responsive">
+                                <table class="table text-center">
+                                        <thead>
+                                                <tr>
+                                                        <th style="width: 34%;"></th>
+                                                        <th style="width: 22%;">Free</th>
+                                                        <th style="width: 22%;">Pro</th>
+                                                        <th style="width: 22%;">Enterprise</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <th scope="row" class="text-start">Public</th>
+                                                        <td><svg class="bi" width="24" height="24">
+                                                                        <use xlink:href="#check"></use>
+                                                                </svg></td>
+                                                        <td><svg class="bi" width="24" height="24">
+                                                                        <use xlink:href="#check"></use>
+                                                                </svg></td>
+                                                        <td><svg class="bi" width="24" height="24">
+                                                                        <use xlink:href="#check"></use>
+                                                                </svg></td>
+                                                </tr>
+                                                <tr>
+                                                        <th scope="row" class="text-start">Private</th>
+                                                        <td></td>
+                                                        <td><svg class="bi" width="24" height="24">
+                                                                        <use xlink:href="#check"></use>
+                                                                </svg></td>
+                                                        <td><svg class="bi" width="24" height="24">
+                                                                        <use xlink:href="#check"></use>
+                                                                </svg></td>
+                                                </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                                <tr>
+                                                        <th scope="row" class="text-start">Permissions</th>
+                                                        <td><svg class="bi" width="24" height="24">
+                                                                        <use xlink:href="#check"></use>
+                                                                </svg></td>
+                                                        <td><svg class="bi" width="24" height="24">
+                                                                        <use xlink:href="#check"></use>
+                                                                </svg></td>
+                                                        <td><svg class="bi" width="24" height="24">
+                                                                        <use xlink:href="#check"></use>
+                                                                </svg></td>
+                                                </tr>
+                                                <tr>
+                                                        <th scope="row" class="text-start">Sharing</th>
+                                                        <td></td>
+                                                        <td><svg class="bi" width="24" height="24">
+                                                                        <use xlink:href="#check"></use>
+                                                                </svg></td>
+                                                        <td><svg class="bi" width="24" height="24">
+                                                                        <use xlink:href="#check"></use>
+                                                                </svg></td>
+                                                </tr>
+                                                <tr>
+                                                        <th scope="row" class="text-start">Unlimited members</th>
+                                                        <td></td>
+                                                        <td><svg class="bi" width="24" height="24">
+                                                                        <use xlink:href="#check"></use>
+                                                                </svg></td>
+                                                        <td><svg class="bi" width="24" height="24">
+                                                                        <use xlink:href="#check"></use>
+                                                                </svg></td>
+                                                </tr>
+                                                <tr>
+                                                        <th scope="row" class="text-start">Extra security</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td><svg class="bi" width="24" height="24">
+                                                                        <use xlink:href="#check"></use>
+                                                                </svg></td>
+                                                </tr>
+                                        </tbody>
+                                </table>
+                        </div>
+                </main>
+
+                <div id="footer">
+                        <!-- <div class="flex">
+                                <h1>Let's work something <span class="highlight">together</span></h1>
+                                <button>Let's Chat -></button>
+                        </div> -->
+                        <hr>
+                        <div class="footer-grid-basic">
+                                <div class="grid-flex-col footer-firstCell">
+                                        <img src="./images/logo.PNG" alt="agency logo" id="logo">
+                                        <p>Digital Client Hub is an digital agency that can help you to create a better
+                                                experience with your clients.
+                                        </p>
+                                        <div class="footer-icon-flex">
+                                                <a href="https://facebook.com" target="_blank">
+                                                        <i class="fa-brands fa-facebook fa-bounce fa-2xl"></i>
+                                                </a>
+                                                <a href="https://youtube.com" target="_blank">
+                                                        <i class="fa-brands fa-youtube fa-bounce fa-2xl"></i>
+                                                </a>
+                                                <a href="https://instagram.com" target="_blank">
+                                                        <i class="fa-brands fa-square-instagram fa-bounce fa-2xl"></i>
+                                                </a>
+                                                <a href="https://whatsapp.com" target="_blank">
+                                                        <i class="fa-brands fa-square-whatsapp fa-bounce fa-2xl"></i>
+                                                </a>
+                                                <a href="https://twitter.com" target="_blank">
+                                                        <i class="fa-brands fa-twitter fa-bounce fa-2xl"></i>
+                                                </a>
+                                                <a href="https://github.com" target="_blank">
+                                                        <i class="fa-brands fa-github fa-bounce fa-2xl"></i>
+                                                </a>
+                                        </div>
+                                </div>
+                                <div class="flex-footer-secondCell">
+                                        <div class="grid-flex-col">
+                                                <h4>Company</h4>
+                                                <p>Our work</p>
+                                                <p>Services</p>
+                                                <p>Community</p>
+                                                <p>Career</p>
+                                        </div>
+                                        <div class="grid-flex-col">
+                                                <h4>Resources</h4>
+                                                <p>Help Center</p>
+                                                <p>Blogs</p>
+                                                <p>Terms & Conditions</p>
+                                        </div>
+                                        <div class="grid-flex-col">
+                                                <h4>Links</h4>
+                                                <p>pricing</p>
+                                                <p>About</p>
+                                                <p>Learn</p>
+                                                <p>Corporate</p>
+                                                <p>News</p>
+                                        </div>
+                                        <div class="grid-flex-col">
+                                                <h4>Follow us</h4>
+                                                <p>Dribble</p>
+                                                <p>Instagram</p>
+                                                <p>Twitter</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

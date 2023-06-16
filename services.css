@@ -20,20 +20,13 @@ img {
 body {
         font-family: 'Roboto', sans-serif;
         background-color: #f5f4ef;
-
-}
-
-iframe {
-        margin-top: 10vh;
-        width: 70%;
-        height: 70vh;
 }
 
 .scroll-tracker {
         position: fixed;
         inset: 0 0 auto;
         height: 0.5rem;
-        background-color: blueviolet;
+        background-color: olivedrab;
         transform-origin: left;
         z-index: 100;
 }
@@ -76,136 +69,112 @@ iframe {
         color: indigo
 }
 
-#footer {
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
-        height: 60vh;
+/* custom styles for bootstrap pricing example start */
+
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
 }
 
-@keyframes gradient {
-        0% {
-                background-position: 0% 50%;
-        }
-
-        50% {
-                background-position: 100% 50%;
-        }
-
-        100% {
-                background-position: 0% 50%;
+@media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+                font-size: 3.5rem;
         }
 }
 
-#companyDesc {
-        width: 90%;
+.b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+}
+
+.bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+}
+
+.nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
         text-align: center;
-        margin: auto;
-        margin-top: 3vh;
-        margin-bottom: 5vh;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
 }
 
-#carouselWithIndicators {
-        width: 90%;
-        margin: auto;
+.btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
 }
 
-.carousel-item {
-        width: 100%;
-        height: 85vh;
+.bd-mode-toggle {
+        z-index: 1500;
 }
 
-.carousel-item>img {
-        width: 100%;
-        height: 100%;
+.indigo {
+        color: indigo !important;
 }
 
-#videoSection {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 8vh;
+.green {
+        background-color: green;
 }
 
-#mission {
-        margin: auto;
-        margin-top: 10vh;
-        width: 90%;
-}
-
-.mission-flex {
-        display: flex;
-        flex-direction: column;
-        gap: 7vh;
-        font-size: 40px;
-        font-weight: bold;
-}
-
-.mission-flex>div>img {
-        height: 50vh;
-}
-
-.flex-basic {
-        display: flex;
-        justify-content: space-between;
-        gap: 5vh;
-}
-
-#principles {
-        background-color: black;
+.white {
         color: white;
-        margin-top: 10vh;
-        padding: 10vh;
 }
 
-.meteor {
-        width: 35vh;
-        height: 35vh;
+.lightPink {
+        background-color: rgba(255, 230, 230, 0.7);
 }
+
+.orange {
+        background-color: orange;
+        color: white;
+}
+
+.red {
+        background-color: red;
+        color: white;
+}
+
+/* Bootstrap pricing example styles end */
 
 .flex {
         display: flex;
 }
-
-.grid-flex-col {
-        display: flex;
-        flex-direction: column;
-        gap: 3vh;
-}
-
-.principles-grid-basic {
-        display: grid;
-        grid-template-columns: 20% 80%;
-        gap: 10vh;
-}
-
-.principles-grid-flex-col-2 {
-        display: flex;
-        flex-direction: column;
-        gap: 15vh;
-}
-
-.principles-grid-flex-col-1 {
-        display: flex;
-        flex-direction: column;
-        gap: 50vh;
-}
-
-.grid-principles {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 5vh;
-}
-
-.grid-principles-card>img {
-        margin-bottom: 7vh;
-}
-
-.grid-principles-card>h4 {
-        margin-bottom: 1vh;
-}
-
-/* footer css */
 
 .flex-footer-secondCell {
         display: flex;
@@ -231,6 +200,12 @@ iframe {
 .footer-icon-flex {
         display: flex;
         justify-content: space-between;
+}
+
+.grid-flex-col {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
 }
 
 #footer i[class*="fa-youtube"]:hover {
@@ -260,8 +235,9 @@ iframe {
 #footer>hr {
         font-weight: bold;
         height: 5px;
-        width: 92%;
+        width: 100%;
         margin: auto;
+        margin-top: 7vh;
         margin-bottom: 7vh;
         color: black;
 }
