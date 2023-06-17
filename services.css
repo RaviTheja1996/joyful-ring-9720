@@ -144,6 +144,19 @@ body {
         z-index: 1500;
 }
 
+h1[class*="display-4 fw-normal text-body-emphasis"] {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+}
+
+h2[class*="display-6 text-center mb-4"] {
+        margin-top: 3vh;
+}
+
+table[class*="table text-center"] {
+        margin-top: 3vh;
+}
+
 .indigo {
         color: indigo !important;
 }
@@ -156,9 +169,9 @@ body {
         color: white;
 }
 
-.lightPink {
+/* .lightPink {
         background-color: rgba(255, 230, 230, 0.7);
-}
+} */
 
 .orange {
         background-color: orange;
@@ -230,6 +243,10 @@ body {
 
 #footer i {
         color: black;
+}
+
+#footer {
+        width: 100vw;
 }
 
 #footer>hr {
