@@ -18,14 +18,8 @@ scrollTracker.animate(
         }
 );
 
-let services = [
-        {
-                Name: "Mobile Package",
-                description: "We provide robust, responsive and innovative mobile app development for your company.",
-                price: 30000
-        },
-];
 
+let BasicCartButton = document.getElementById("BasicCartButton");
 let ProCartButton = document.getElementById("ProCartButton");
 let EnterpriseCartButton = document.getElementById("EnterpriseCartButton");
 let cart;
@@ -37,6 +31,102 @@ else {
         cart = [];
 }
 
-ProCartButton.addEventListener("click", function (e) {
+BasicCartButton.addEventListener("click", function (e) {
+        let obj = {};
+        obj.id = 1;
+        obj.title = "Mobile App Services";
+        obj.calendarScreen = true;
+        obj.notificationsScreen = true;
+        obj.newsScreen = true;
+        obj.supportScreen = true;
+        obj.homeScreen = true;
+        obj.securityScreen = false;
+        obj.themesScreen = false;
+        obj.dashboardScreen = false;
+        obj.chatScreen = false;
+        obj.financeScreen = false;
+        obj.collaborationToolsScreen = false;
+        let flag = true;
+        if (cart.length > 0) {
+                cart.forEach(element => {
+                        if (element.id === 1) {
+                                flag = false;
+                        }
+                });
+        }
+        if (flag) {
+                localStorage.setItem("cart", JSON.stringify(obj));
+        }
+        window.location.href = "./cart.html";
+});
 
+ProCartButton.addEventListener("click", function (e) {
+        let obj = {};
+        obj.id = 2;
+        obj.title = "Website Development Services";
+        obj.AboutPage = true;
+        obj.ContactPage = true;
+        obj.HomePage = true;
+        obj.DashboardPage = true;
+        obj.userPage = true;
+        obj.responsiveness = true;
+        obj.productServicesPage = false;
+        obj.careerServicesPage = false;
+        obj.investorServicesPage = false;
+        obj.downloadServicesPage = false;
+        obj.socialMediaServicesPage = false;
+        obj.securityPage = false;
+        let flag = true;
+        if (cart.length > 0) {
+                cart.forEach(element => {
+                        if (element.id === 2) {
+                                flag = false;
+                        }
+                });
+        }
+        if (flag) {
+                localStorage.setItem("cart", JSON.stringify(obj));
+        }
+        window.location.href = "./cart.html";
+});
+
+EnterpriseCartButton.addEventListener("click", function (e) {
+        let obj = {};
+        obj.id = 3;
+        obj.title = "Mobile App Services";
+        obj.calendarScreen = true;
+        obj.notificationsScreen = true;
+        obj.newsScreen = true;
+        obj.supportScreen = true;
+        obj.homeScreen = true;
+        obj.AboutPage = true;
+        obj.ContactPage = true;
+        obj.HomePage = true;
+        obj.DashboardPage = true;
+        obj.userPage = true;
+        obj.responsiveness = true;
+        obj.securityPage = true;
+        obj.securityScreen = true;
+        obj.productServicesPage = false;
+        obj.careerServicesPage = false;
+        obj.investorServicesPage = false;
+        obj.downloadServicesPage = false;
+        obj.socialMediaServicesPage = false;
+        obj.themesScreen = false;
+        obj.dashboardScreen = false;
+        obj.chatScreen = false;
+        obj.financeScreen = false;
+        obj.collaborationToolsScreen = false;
+        let flag = true;
+        if (cart.length > 0) {
+                cart.forEach(element => {
+                        if (element.id === 2) {
+                                flag = false;
+                        }
+                });
+        }
+        if (flag) {
+                localStorage.setItem("cart", JSON.stringify(obj));
+        }
+        window.location.href = "./cart.html";
 });
