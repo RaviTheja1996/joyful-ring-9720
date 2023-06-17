@@ -18,7 +18,7 @@ img {
 }
 
 body {
-        font-family: sans-serif;
+        font-family: 'Roboto', sans-serif;
         background-color: #f5f4ef;
 }
 
@@ -26,7 +26,7 @@ body {
         position: fixed;
         inset: 0 0 auto;
         height: 0.5rem;
-        background-color: blueviolet;
+        background-color: skyblue;
         transform-origin: left;
         z-index: 100;
 }
@@ -38,6 +38,7 @@ body {
 
 .navbar {
         border-bottom: 3px solid black;
+        font-weight: bold;
 }
 
 .nav-flex {

@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+        box-sizing: border-box;
+}
+
+* {
+        margin: 0;
+}
+
+html {
+        color-scheme: light dark;
+}
+
+img {
+        max-width: 100%;
+        display: block;
+}
+
+body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f5f4ef !important;
+}
+
+.scroll-tracker {
+        position: fixed;
+        inset: 0 0 auto;
+        height: 0.5rem;
+        background-color: orange;
+        transform-origin: left;
+        z-index: 100;
+}
+
+.navbar-nav li {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-weight: bold;
+}
+
+.navbar {
+        border-bottom: 3px solid black;
+}
+
+.nav-flex {
+        display: flex;
+        gap: 15%;
+}
+
+.nav-flex>p {
+        margin-top: 2vh;
+        color: orangered;
+}
+
+.navbar+div {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        margin-top: 5vh;
+        justify-content: center;
+        color: indigo
+}
+
+.flex-basic {
+        display: flex;
+        gap: 2vh;
+}
