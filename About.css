@@ -297,6 +297,10 @@ iframe {
                 grid-template-columns: repeat(1, 1fr);
         }
 
+        .principles-grid-basic {
+                grid-template-columns: repeat(1, 1fr);
+        }
+
         .flex {
                 flex-wrap: wrap;
         }
