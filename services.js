@@ -54,8 +54,14 @@ BasicCartButton.addEventListener("click", function (e) {
                         }
                 });
         }
-        if (flag) {
-                localStorage.setItem("cart", JSON.stringify(obj));
+        if (cart.length > 0) {
+                cart = [];
+                cart.push(obj);
+                localStorage.setItem("cart", JSON.stringify(cart));
+        }
+        else {
+                cart.push(obj);
+                localStorage.setItem("cart", JSON.stringify(cart));
         }
         window.location.href = "./cart.html";
 });
@@ -84,8 +90,14 @@ ProCartButton.addEventListener("click", function (e) {
                         }
                 });
         }
-        if (flag) {
-                localStorage.setItem("cart", JSON.stringify(obj));
+        if (cart.length > 0) {
+                cart = [];
+                cart.push(obj);
+                localStorage.setItem("cart", JSON.stringify(cart));
+        }
+        else {
+                cart.push(obj);
+                localStorage.setItem("cart", JSON.stringify(cart));
         }
         window.location.href = "./cart.html";
 });
@@ -93,7 +105,7 @@ ProCartButton.addEventListener("click", function (e) {
 EnterpriseCartButton.addEventListener("click", function (e) {
         let obj = {};
         obj.id = 3;
-        obj.title = "Mobile App Services";
+        obj.title = "Website and Mobile App Services";
         obj.calendarScreen = true;
         obj.notificationsScreen = true;
         obj.newsScreen = true;
@@ -119,14 +131,13 @@ EnterpriseCartButton.addEventListener("click", function (e) {
         obj.collaborationToolsScreen = false;
         let flag = true;
         if (cart.length > 0) {
-                cart.forEach(element => {
-                        if (element.id === 2) {
-                                flag = false;
-                        }
-                });
+                cart = [];
+                cart.push(obj);
+                localStorage.setItem("cart", JSON.stringify(cart));
         }
-        if (flag) {
-                localStorage.setItem("cart", JSON.stringify(obj));
+        else {
+                cart.push(obj);
+                localStorage.setItem("cart", JSON.stringify(cart));
         }
         window.location.href = "./cart.html";
 });
