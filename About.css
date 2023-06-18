@@ -293,6 +293,10 @@ iframe {
                 grid-template-columns: repeat(1, 1fr);
         }
 
+        .grid-principles {
+                grid-template-columns: repeat(1, 1fr);
+        }
+
         .flex {
                 flex-wrap: wrap;
         }
@@ -300,6 +304,10 @@ iframe {
 
 @media screen and (max-width: 750px) {
         .grid-basic {
+                grid-template-columns: repeat(2, 1fr);
+        }
+
+        .grid-principles {
                 grid-template-columns: repeat(2, 1fr);
         }
 
