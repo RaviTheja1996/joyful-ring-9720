@@ -64,3 +64,135 @@ body {
         display: flex;
         gap: 2vh;
 }
+
+.green {
+        background-color: green;
+}
+
+/* div[class*="card mb-4"] {
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+} */
+
+.customDeleteButtonWidth {
+        width: 90% !important;
+        color: white !important;
+        background-color: red !important;
+        margin: auto;
+        margin-bottom: 3%;
+}
+
+.flex {
+        display: flex;
+}
+
+.flex-footer-secondCell {
+        display: flex;
+        justify-content: space-between;
+}
+
+.flex-footer-secondCell h4 {
+        font-weight: bold;
+}
+
+.footer-firstCell {
+        width: 70%;
+}
+
+.footer-grid-basic {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8vh;
+        width: 90%;
+        margin: auto;
+}
+
+.footer-icon-flex {
+        display: flex;
+        justify-content: space-between;
+}
+
+.grid-flex-col {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+}
+
+#footer i[class*="fa-youtube"]:hover {
+        color: red;
+}
+
+#footer i[class*="fa-facebook"]:hover {
+        color: blue;
+}
+
+#footer i[class*="fa-square-instagram"]:hover {
+        color: orange;
+}
+
+#footer i[class*="fa-square-whatsapp"]:hover {
+        color: green;
+}
+
+#footer i[class*="fa-twitter"]:hover {
+        color: blue;
+}
+
+#footer i {
+        color: black;
+}
+
+#footer {
+        width: 100vw;
+}
+
+#footer>hr {
+        font-weight: bold;
+        height: 5px;
+        width: 100%;
+        margin: auto;
+        margin-top: 7vh;
+        margin-bottom: 7vh;
+        color: black;
+}
+
+#footer>div:nth-child(1) {
+        width: 90%;
+        justify-content: space-between;
+        margin: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+}
+
+#footer>div:nth-child(1)>button {
+        color: white;
+        background-color: black;
+        height: 8vh;
+        width: 35vh;
+}
+
+#logo {
+        width: 150px;
+        height: 60px;
+}
+
+@media screen and (max-width: 480px) {
+
+        .grid-basic,
+        .grid-FAQ {
+                grid-template-columns: repeat(1, 1fr);
+        }
+
+        .flex {
+                flex-wrap: wrap;
+        }
+}
+
+@media screen and (max-width: 750px) {
+        .grid-basic {
+                grid-template-columns: repeat(2, 1fr);
+        }
+
+        .flex {
+                flex-wrap: wrap;
+        }
+}

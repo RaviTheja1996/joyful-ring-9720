@@ -278,3 +278,25 @@ table[class*="table text-center"] {
         width: 150px;
         height: 60px;
 }
+
+@media screen and (max-width: 480px) {
+
+        .grid-basic,
+        .grid-FAQ {
+                grid-template-columns: repeat(1, 1fr);
+        }
+
+        .flex {
+                flex-wrap: wrap;
+        }
+}
+
+@media screen and (max-width: 750px) {
+        .grid-basic {
+                grid-template-columns: repeat(2, 1fr);
+        }
+
+        .flex {
+                flex-wrap: wrap;
+        }
+}
