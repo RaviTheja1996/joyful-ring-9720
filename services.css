@@ -289,6 +289,10 @@ table[class*="table text-center"] {
         .flex {
                 flex-wrap: wrap;
         }
+
+        .footer-grid-basic {
+                grid-template-columns: repeat(1, 1fr);
+        }
 }
 
 @media screen and (max-width: 750px) {

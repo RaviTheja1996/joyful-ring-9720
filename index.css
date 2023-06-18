@@ -375,6 +375,10 @@ body {
                 grid-template-columns: repeat(1, 1fr);
         }
 
+        .footer-grid-basic {
+                grid-template-columns: repeat(1, 1fr);
+        }
+
         .flex {
                 flex-wrap: wrap;
         }
