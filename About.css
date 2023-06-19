@@ -315,6 +315,10 @@ iframe {
                 grid-template-columns: repeat(2, 1fr);
         }
 
+        .principles-grid-basic {
+                grid-template-columns: repeat(1, 1fr);
+        }
+
         .grid-principles {
                 grid-template-columns: repeat(2, 1fr);
         }
