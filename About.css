@@ -305,6 +305,10 @@ iframe {
                 grid-template-columns: repeat(1, 1fr);
         }
 
+        #footer {
+                height: 100vh;
+        }
+
         .flex {
                 flex-wrap: wrap;
         }
