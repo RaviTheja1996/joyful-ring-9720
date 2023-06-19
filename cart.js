@@ -119,12 +119,12 @@ function display() {
                                         let chk = document.createElement("input");
                                         chk.type = "checkbox";
                                         chk.setAttribute("class", "form-check-input");
-                                        chk.style.position = "absolute";
-                                        chk.style.marginLeft = "32%";
+                                        // chk.style.position = "absolute";
+                                        chk.style.marginLeft = "10%";
                                         let price = document.createElement("p");
                                         price.setAttribute("class", "mb-0");
-                                        price.style.position = "absolute";
-                                        price.style.marginLeft = "37%";
+                                        // price.style.position = "absolute";
+                                        price.style.marginLeft = "2%";
                                         switch (key) {
                                                 case 'securityScreen':
                                                         {
@@ -190,6 +190,7 @@ function display() {
                                         let flex = document.createElement("div");
                                         flex.style.display = "flex";
                                         flex.style.gap = "2%";
+                                        flex.style.flexWrap = "wrap";
 
                                         chk.addEventListener("change", function (e) {
                                                 let length = price.innerText.length;
