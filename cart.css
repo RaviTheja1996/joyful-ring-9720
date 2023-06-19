@@ -189,6 +189,14 @@ body {
         .flex {
                 flex-wrap: wrap;
         }
+
+        .footer-grid-basic {
+                grid-template-columns: repeat(1, 1fr);
+        }
+
+        #footer {
+                height: 100vh;
+        }
 }
 
 @media screen and (max-width: 750px) {
@@ -198,5 +206,13 @@ body {
 
         .flex {
                 flex-wrap: wrap;
+        }
+
+        .footer-grid-basic {
+                grid-template-columns: repeat(1, 1fr);
+        }
+
+        #footer {
+                height: 100vh;
         }
 }

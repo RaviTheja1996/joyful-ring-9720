@@ -286,7 +286,7 @@ iframe {
         height: 60px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 200px) {
 
         .grid-basic,
         .grid-FAQ {
@@ -305,22 +305,34 @@ iframe {
                 grid-template-columns: repeat(1, 1fr);
         }
 
+        #footer {
+                height: 100vh;
+        }
+
         .flex {
                 flex-wrap: wrap;
         }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (min-width: 481px) and (max-width: 750px) {
         .grid-basic {
                 grid-template-columns: repeat(2, 1fr);
         }
 
         .principles-grid-basic {
-                grid-template-columns: repeat(1, 1fr);
+                grid-template-columns: repeat(1, 1fr) !important;
         }
 
         .grid-principles {
                 grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer-grid-basic {
+                grid-template-columns: repeat(1, 1fr);
+        }
+
+        #footer {
+                height: 100vh;
         }
 
         .flex {
