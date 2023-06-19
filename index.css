@@ -368,15 +368,9 @@ body {
         height: 60px;
 }
 
-@media screen and (max-width: 480px) {
-
-        .grid-basic,
-        .grid-FAQ {
-                grid-template-columns: repeat(1, 1fr);
-        }
-
-        .footer-grid-basic {
-                grid-template-columns: repeat(1, 1fr);
+@media screen and (max-width: 750px) {
+        .grid-basic {
+                grid-template-columns: repeat(2, 1fr);
         }
 
         .flex {
@@ -392,9 +386,15 @@ body {
         }
 }
 
-@media screen and (max-width: 750px) {
-        .grid-basic {
-                grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width: 480px) {
+
+        .grid-basic,
+        .grid-FAQ {
+                grid-template-columns: repeat(1, 1fr);
+        }
+
+        .footer-grid-basic {
+                grid-template-columns: repeat(1, 1fr);
         }
 
         .flex {
