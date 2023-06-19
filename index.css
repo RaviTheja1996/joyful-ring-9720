@@ -96,12 +96,12 @@ body {
 
 .tapeStrip {
         margin-top: 10vh;
-        height: 12vh;
+        /* height: 12vh; */
         border-top: 2px solid black;
         border-bottom: 2px solid black;
         display: flex;
         justify-content: space-around;
-        padding: 1%;
+        padding: 1rem;
         background-color: white;
 }
 
@@ -111,7 +111,7 @@ body {
 }
 
 .tapeStrip>div>div:nth-child(1) {
-        height: 5vh;
+        /* height: 5vh; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -377,6 +377,10 @@ body {
                 flex-wrap: wrap;
         }
 
+        .tapeStrip {
+                flex-wrap: wrap;
+        }
+
         .footer-grid-basic {
                 grid-template-columns: repeat(1, 1fr);
         }
@@ -398,6 +402,10 @@ body {
         }
 
         .flex {
+                flex-wrap: wrap;
+        }
+
+        .tapeStrip {
                 flex-wrap: wrap;
         }
 
