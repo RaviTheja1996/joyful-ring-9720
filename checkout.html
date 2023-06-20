@@ -153,29 +153,13 @@
 
                                                         <div class="col-12">
                                                                 <label for="email" class="form-label">Email <span
-                                                                                class="text-body-secondary">(Optional)</span></label>
+                                                                                class="text-body-secondary">(Mandatory)</span></label>
                                                                 <input type="email" class="form-control" id="email"
                                                                         placeholder="you@example.com">
                                                                 <div class="invalid-feedback">
                                                                         Please enter a valid email address for shipping
                                                                         updates.
                                                                 </div>
-                                                        </div>
-
-                                                        <div class="col-12">
-                                                                <label for="address" class="form-label">Address</label>
-                                                                <input type="text" class="form-control" id="address"
-                                                                        placeholder="1234 Main St" required="">
-                                                                <div class="invalid-feedback">
-                                                                        Please enter your shipping address.
-                                                                </div>
-                                                        </div>
-
-                                                        <div class="col-12">
-                                                                <label for="address2" class="form-label">Address 2 <span
-                                                                                class="text-body-secondary">(Optional)</span></label>
-                                                                <input type="text" class="form-control" id="address2"
-                                                                        placeholder="Apartment or suite">
                                                         </div>
 
                                                         <div class="col-md-5">
@@ -221,23 +205,6 @@
                                                         </div>
                                                 </div>
 
-                                                <hr class="my-4">
-
-                                                <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input"
-                                                                id="same-address">
-                                                        <label class="form-check-label" for="same-address">Shipping
-                                                                address is the same as my billing address</label>
-                                                </div>
-
-                                                <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" id="save-info">
-                                                        <label class="form-check-label" for="save-info">Save this
-                                                                information for next time</label>
-                                                </div>
-
-                                                <hr class="my-4">
-
                                                 <h4 class="mb-3">Payment</h4>
 
                                                 <div class="my-3">
@@ -253,12 +220,6 @@
                                                                 <label class="form-check-label" for="debit">Debit
                                                                         card</label>
                                                         </div>
-                                                        <!-- <div class="form-check">
-                                                                <input id="paypal" name="paymentMethod" type="radio"
-                                                                        class="form-check-input" required="">
-                                                                <label class="form-check-label"
-                                                                        for="paypal">PayPal</label>
-                                                        </div> -->
                                                 </div>
 
                                                 <div class="row gy-3">
@@ -266,7 +227,7 @@
                                                                 <label for="cc-name" class="form-label">Name on
                                                                         card</label>
                                                                 <input type="text" class="form-control" id="cc-name"
-                                                                        placeholder="" required="">
+                                                                        placeholder="" required>
                                                                 <small class="text-body-secondary">Full name as
                                                                         displayed on card</small>
                                                                 <div class="invalid-feedback">
@@ -279,6 +240,8 @@
                                                                         number</label>
                                                                 <input type="text" class="form-control" id="cc-number"
                                                                         placeholder="" required="">
+                                                                <small class="text-body-secondary">Enter a valid
+                                                                        16-digit card number</small>
                                                                 <div class="invalid-feedback">
                                                                         Credit card number is required
                                                                 </div>

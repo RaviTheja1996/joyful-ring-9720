@@ -68,6 +68,10 @@ span[class*="rounded-pill"] {
         border-radius: 50% !important;
 }
 
+h4[class*="mb-3"] {
+        margin-top: 7vh !important;
+}
+
 /* div[class*="col-md-5 col-lg-4 order-md-last"] {
         width: 62vh;
 } */
